@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Content</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#ffffff">
+    <div class="menu">
+        <table>
+            <tr>
+                <td width="10%"><img src="https://iconape.com/wp-content/files/hm/264529/png/puskesmas-logo.png" alt="Logo-Puskesmas"></td>
+                <td width="25%"><h3>PUSKESMAS<br>Balaraja</h3></td>
+                <td>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#covid">Covid - 19</a></li>
+                        <li><a href="#daftar">Pendaftaran</a></li>
+                        <li><a href="#artikel">Artikel Kesehatan</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="heading">
+        <h1>SELAMAT DATANG DI</h1>
+        <h1>WEBSITE PUSKESMAS</h1>
+        <h1>BALARAJA</h1>
+        <h3 class="indo">Untuk Indonesia Lebih</h3>
+        <h3 class="animasi"></h3>
+    </div>
+    
+    <div>
+        <hr class="hr1" align="left">
+        <hr class="hr2">
+    </div>
+
+    <div class="layanan" id="layanan">
+        <table align="center" width="100%">
+            <tr class="judul-layanan">
+                <td colspan="2"><h3>Layanan Puskesmas</h3></td>
+            </tr>
+            <tr>
+                <td><p>IGD 24 Jam</p></td>
+                <td><p>Rawat Inap</p></td>
+            </tr>
+            <tr>
+                <td><p>Rawat Jalan</p></td>
+                <td><p>Persalinan</p></td>
+            </tr>
+            <tr class="judul-layanan">
+                <td colspan="2"><h3>Konsultasi / Klinik</h3></td>
+            </tr>
+            <tr>
+                <td><p>Klinik Gizi</p></td>
+                <td><p>Klinik Kesehatan Lingkungan</p></td>
+            </tr>
+            <tr>
+                <td><p>Klinik Remaja</p></td>
+                <td><p>Klinik HIV, AIDS</p></td>
+            </tr>
+            <tr>
+                <td><p>Klinik SANITASI</p></td>
+                <td><p>Klinik Berhenti Merokok</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <hr class="hr1" align="left">
+        <hr class="hr2">
+    </div>
+
+    <div class="covid" id="covid">
+        <h2>Berita Covid - 19 di Indonesia</h2>
+        <p><i>Sumber : covid19.go.id</i></p>
+        <iframe src="https://covid19.go.id/p/berita" frameborder="2" height="530px" width="100%"></iframe>
+    </div>
+
+    <div>
+        <hr class="hr1" align="left">
+        <hr class="hr2">
+    </div>
+
+    <div class="pendaftaran" id="daftar">
+        <form>
+            <h2>PENDAFTARAN KARTU PUSKESMAS</h2>
+            <table width="90%">
+                <tr>
+                    <td colspan="3" style="font-size: 20px; padding: 10px 0 20px 0">
+                        <strong>Data Diri</strong>
+                        <hr align="left">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>NIK KTP</td>
+                    <td>:</td>
+                    <td><input type="number" name="nik"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="Laki_laki" value="Laki_laki"> Laki - laki
+                        <input type="radio" name="Perempuan" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tgl Lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name="Tempat_tgl_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td>:</td>
+                    <td><input type="text" name="pekerjaan"></td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="islam" value="islam"> ISLAM
+                        <input type="radio" name="prostetan" value="prostetan"> PROSTETAN
+                        <input type="radio" name="khatolik" value="khatolik"> KHATOLIK
+                        <input type="radio" name="hindu" value="hindu"> HINDU
+                        <input type="radio" name="budha" value="budha"> BUDHA
+                        <input type="radio" name="khonghucu" value="khonghucu"> KHONGHUCU
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. HP</td>
+                    <td>:</td>
+                    <td><input type="number" name="no_hp"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" cols="45" rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Upload Foto KTP </td>
+                    <td>:</td>
+                    <td><input type="file" name="foto"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <br>
+                        <input type="submit" value="DAFTAR" onclick="daftar()">
+                        <input type="reset" value="Muat Ulang" onclick="document.location.reload(true)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        <hr class="hr1" align="left">
+        <hr class="hr2">
+    </div>
+    
+    <div id="artikel">
+        <h2>Artikel Kesehatan</h2>
+        <p><i>Sumber : sehatq.com</i></p>
+        <iframe src="https://www.sehatq.com/artikel" height="530px" width="100%"></iframe>
+    </div>
+
+    <div>
+        <hr class="hr1" align="left">
+        <hr class="hr2">
+    </div>
+
+    <div id="help">
+        <h3>Jika ada kendala, Hubungi Administrator</h3>
+        <p>fitradayonofap19@gmail.com</p>
+        <p>31 Desember 2020</p>
+        <footer style="padding-top: 50px;">
+            <p>Fitrada Yonofa Putra &#169; 2020, PUSKESMAS BALARAJA</p>
+            <p>Latihan Akhir (MatKul Web Dasar)</p>
+        </footer>
+    </div>
+
+    <script>
+        function daftar() {
+            alert('Terima Kasih telah Mendaftar');
+        }
+
+        function reloadpage() {
+            location.reload()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+* {
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bookman Old Style'
+}
+
+.menu {
+    background-color: #2f98fa;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.menu img {
+    width: 70px; 
+    padding: 7px 10px;
+}
+
+.menu ul {
+    display: block;
+    list-style-type: disc;
+    margin: 40px 0px;
+}
+
+.menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+.menu a {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.menu a:hover {
+    font-weight: 1000;
+}
+
+.heading {
+    background-image: url('img/puskesmas-balaraja.jpg'); 
+    background-size: cover;
+    height: 555px; 
+    width: 1020px;
+    opacity: 0.8;
+    color: white;
+}
+
+.heading h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 20px 0 0 50px;
+}
+
+.heading .indo {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 110px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.heading .animasi {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.animasi::before{
+	content: '';
+	animation: animasi infinite 7s;
+    color: white;
+}
+
+@keyframes animasi{
+	0%{
+		content: 'BAIK';
+	}
+
+	50%{
+		content: 'SEHAT';
+	}
+
+	100%{
+		content: 'SEJAHTERAH';
+	}
+}
+
+.hr1 {
+    border: #2f98fa 5px solid;
+    width: 65%;
+    margin: 40px 0 10px 0;
+    border-radius: 10px;
+}
+
+.hr2 {
+    border: #2f98fa 5px solid;
+    margin: 0 0 40px 0;
+    border-radius: 10px;
+}
+
+.layanan table {
+    text-align: center;
+}
+
+.judul-layanan h3 {
+    padding: 30px 0;
+    font-size: 25px;
+}
+
+.layanan tr td p {
+    font-size: 20px;
+    padding: 20px 100px;
+    background-color: #2f98fa;
+    color: white;
+}
+
+.covid {
+    text-align: center;
+}
+
+.pendaftaran {
+    padding: 10px 0;
+}
+
+.pendaftaran h2 {
+    background-color: #2f98fa; 
+    color: white; 
+    border-radius: 4px; 
+    padding: 5px 0;
+}
+
+.pendaftaran hr {
+    border: black 1px solid; 
+    width: 40%;
+}
+
+#artikel {
+    text-align: center;
+}
+
+#help {
+    background-color: #73bbff;
+    font-family: 'Lucida Console'; 
+    text-align: center; 
+    padding: 200px 0;
+}
